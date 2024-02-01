@@ -36,38 +36,38 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
     width: 100vw;
-}
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
 
 
-}
+    }
 
-ul li {
-    list-style-type: none;
-}
+    ul li {
+        list-style-type: none;
+    }
 
-ul li a {
-    font-weight: bold;
-    padding: 10px;
-    color: #464646;
-}
+    ul li a {
+        font-weight: bold;
+        padding: 10px;
+        color: #464646;
+    }
 
-ul li a.active,
-ul li a:hover {
-    color: #0282F9;
+    ul li a.active,
+    ul li a:hover {
+        color: #0282F9;
+    }
 }
 </style>
