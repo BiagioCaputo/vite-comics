@@ -101,7 +101,7 @@ export default {
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
 #upper-footer {
     background-image: url(./../assets/img/footer-bg.jpg);
     background-size: cover;
@@ -112,83 +112,87 @@ export default {
 
     position: relative;
     overflow: hidden;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    ul li {
+        list-style-type: none;
+        line-height: 1.5;
+    }
+
+    ul li a {
+        color: #959595;
+    }
+
+    .ul-container {
+        display: flex;
+        gap: 50px;
+    }
+
+    figure {
+        position: absolute;
+        background-image: url(../assets/img/dc-logo-bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 600px;
+        right: 40px;
+        top: -100px;
+
+    }
 }
 
-#upper-footer .container {
-    display: flex;
-    justify-content: space-between;
-}
 
-h3 {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 
-ul li {
-    list-style-type: none;
-    line-height: 1.5;
-}
 
-ul li a {
-    color: #959595;
-}
-
-.ul-container {
-    display: flex;
-    gap: 50px;
-}
-
-figure {
-    position: absolute;
-    background-image: url(../assets/img/dc-logo-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 600px;
-    height: 600px;
-    right: 40px;
-    top: -100px;
-
-}
 
 #bottom-footer {
     background-color: #303030;
     padding: 20px 0;
-}
 
-#bottom-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-#bottom-footer button {
-    background: none;
-    border: 2px solid #047EEF;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-}
+    button {
+        background: none;
+        border: 2px solid #047EEF;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+    }
 
-#bottom-footer .icons-box {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
+    .icons-box {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
 
-#bottom-footer h2 {
-    color: #047EEF;
-}
+    h2 {
+        color: #047EEF;
+    }
 
-#bottom-footer .icons-list {
-    display: flex;
-    gap: 10px;
-}
+    .icons-list {
+        display: flex;
+        gap: 10px;
+    }
 
-#bottom-footer ul li {
-    list-style-type: none;
-}
+    ul li {
+        list-style-type: none;
+    }
 
-#bottom-footer ul li a {
-    color: #959595;
+    ul li a {
+        color: #959595;
+    }
 }
 </style>
