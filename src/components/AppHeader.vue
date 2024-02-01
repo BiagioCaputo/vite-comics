@@ -22,36 +22,38 @@ export default {
 
 <template>
     <header>
-        <nav class="container">
+        <div class="container">
+            <nav>
+                <figure>
+                    <img src="../assets/img/dc-logo.png" alt="logo dc">
+                </figure>
+                <ul>
+                    <li v-for="link of links"><a :href="link.ref">{{ (link.name).toUpperCase() }}</a></li>
+                </ul>
+            </nav>
 
-            <figure>
-                <img src="../assets/img/dc-logo.png" alt="logo dc">
-            </figure>
-
-
-            <ul>
-                <li v-for="link of links"><a :href="link.ref">{{ (link.name).toUpperCase() }}</a></li>
-            </ul>
-
-        </nav>
+        </div>
     </header>
 </template>
 
 <style scoped>
+header {
+    width: 100vw;
+}
+
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
-figure {
-    width: 30%;
-}
-
 ul {
-    width: 70%;
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+
 }
 
 ul li {
