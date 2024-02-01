@@ -45,13 +45,13 @@ nav {
 }
 
 figure {
-    width: 40%;
+    width: 30%;
 }
 
 ul {
+    width: 70%;
     display: flex;
-    gap: 10px;
-    width: 60%;
+    gap: 5px;
 }
 
 ul li {
