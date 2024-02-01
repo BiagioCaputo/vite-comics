@@ -21,7 +21,7 @@ export default {
   box-sizing: border-box;
 }
 
-/* Gnereics */
+/* Generics */
 
 img {
   max-width: 100%;
@@ -29,5 +29,11 @@ img {
 
 a {
   text-decoration: none;
+}
+
+/*Utilies*/
+.container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 </style>
