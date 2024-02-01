@@ -1,10 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
+import AppUpperFooter from './components/AppUpperFooter.vue';
 
 export default {
   name: 'Vite-comics',
-  components: { AppHeader, AppMain }
+  components: { AppHeader, AppMain, AppUpperFooter }
 
 };
 </script>
@@ -12,6 +13,7 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
+  <AppUpperFooter />
 </template>
 
 <style lang="scss">
