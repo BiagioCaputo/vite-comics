@@ -1,12 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
-import AppUpperFooter from './components/AppUpperFooter.vue';
-import AppBottomFooter from './components/AppBottomFooter.vue';
+import AppFooter from './components/AppFooter.vue';
+
 
 export default {
   name: 'Vite-comics',
-  components: { AppHeader, AppMain, AppUpperFooter, AppBottomFooter }
+  components: { AppHeader, AppMain, AppFooter }
 
 };
 </script>
@@ -14,8 +14,7 @@ export default {
 <template>
   <AppHeader />
   <AppMain />
-  <AppUpperFooter />
-  <AppBottomFooter />
+  <AppFooter />
 </template>
 
 <style lang="scss">
