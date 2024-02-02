@@ -3,9 +3,6 @@ import ComicsCard from './ComicsCard.vue';
 export default {
     name: 'AppMain',
     components: { ComicsCard },
-    props: {
-
-    },
 
     data() {
         return {
@@ -106,15 +103,7 @@ export default {
         <div class="container">
             <div class="cards-container">
                 <div class="cards-row">
-                    <div class="cards-col">
-                        <div class="comic-card">
-                            <figure>
-                                <img
-                                    src='https://imgs.search.brave.com/qMxyCwK99aguaETp4ioxXLrpxwNg2JNBN3Oq7LGAgzM/rs:fit:780:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZmxpY2tlcmluZ215/dGguY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzEwL0Jh/dG1hbi1XaGl0ZS1L/bmlnaHQtUHJlc2Vu/dHMtSGFybGV5LVF1/aW5uLTEtMS5qcGc'>
-                            </figure>
-                            <h4>Action comics</h4>
-                        </div>
-                    </div>
+                    <ComicsCard v-for="comics in currentSeries" :currentSeries="comics" />
                 </div>
 
             </div>
@@ -139,9 +128,6 @@ main {
         flex-basis: calc(100% / 6);
     }
 
-    img {
-        display: block;
-    }
 
 
 }
