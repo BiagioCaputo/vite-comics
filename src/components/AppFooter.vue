@@ -144,7 +144,7 @@ export default {
         background-size: contain;
         width: 600px;
         height: 600px;
-        right: 40px;
+        right: 80px;
         top: -100px;
 
     }
@@ -167,14 +167,15 @@ export default {
     button {
         background: none;
         border: 2px solid #047EEF;
-        padding: 10px 20px;
+        padding: 20px 20px;
         color: white;
         cursor: pointer;
+        font-weight: bold;
     }
 
     .icons-box {
         display: flex;
-        gap: 15px;
+        gap: 25px;
         align-items: center;
     }
 
@@ -184,11 +185,8 @@ export default {
 
     .icons-list {
         display: flex;
-        gap: 10px;
-    }
-
-    ul li {
-        list-style-type: none;
+        gap: 15px;
+        font-weight: bold;
     }
 
     ul li a {

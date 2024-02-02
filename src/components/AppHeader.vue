@@ -55,14 +55,11 @@ header {
 
     }
 
-    ul li {
-        list-style-type: none;
-    }
-
     ul li a {
         font-weight: bold;
         padding: 10px;
         color: #464646;
+        font-weight: bold;
     }
 
     ul li a.active,
