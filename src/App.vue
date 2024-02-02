@@ -7,7 +7,7 @@ import AppJumbotron from './components/AppJumbotron.vue';
 
 export default {
   name: 'Vite-comics',
-  components: { AppHeader, AppMain, AppFooter, AppJumbotron }
+  components: { AppHeader, AppMain, AppFooter, AppJumbotron },
 
 };
 </script>
