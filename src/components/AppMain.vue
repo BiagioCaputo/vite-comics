@@ -101,10 +101,15 @@ export default {
 <template>
     <main>
         <div class="container">
+            <div id="current-series" class="blue-spacing">CURRENT SERIES</div>
             <div class="cards-container">
                 <div class="cards-row">
                     <ComicsCard v-for="comics in currentSeries" :currentSeries="comics" />
                 </div>
+                <div class="box-button">
+                    <button class="blue-spacing">LOAD MORE</button>
+                </div>
+
 
             </div>
         </div>
@@ -117,6 +122,17 @@ main {
     padding: 50px 0;
     color: white;
 
+    .container {
+        position: relative;
+
+        #current-series {
+            position: absolute;
+            top: -70px;
+            left: 0;
+            font-size: 18px;
+        }
+    }
+
     .cards-row {
         display: flex;
         flex-wrap: wrap;
@@ -126,6 +142,22 @@ main {
     .cards-col {
         padding: 1rem;
         flex-basis: calc(100% / 6);
+    }
+
+    .blue-spacing {
+        padding: 10px 30px;
+        background-color: #0282F9;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        max-width: 300px;
+    }
+
+    .box-button {
+        text-align: center;
+        margin-top: 30px;
+
     }
 
 
